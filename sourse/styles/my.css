@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono&display=swap');
+
+body{
+  font-family: Roboto Mono, serif;
+  background: linear-gradient(90deg, #BC4A0B 0%, #090404 85%);
+}
+
+p{
+  color:aliceblue ;
+}
+
+.nav-link{
+  color: white;
+}
+.navbar-nav .nav-link.active{
+  color: gray;
+}
+.navbar-brand img{
+  width: 50px;
+}
+.navbar-toggler{
+  background-color: gray;
+  
+}
+.sidebar{
+  color:aliceblue;
+  background: linear-gradient(270deg, #BC4A0B 0%, #090404 85%);
+}
+
+.card{
+  
+  background: linear-gradient(90deg, #BC4A0B 0%, #090404 85%);
+  color: aliceblue;
+}
+
+.slide-text,.fotter_text{
+  color: aliceblue;
+  margin: auto auto;
+}
+
+footer,.btn-outline-danger{
+  background: linear-gradient(270deg, #BC4A0B 0%, #090404 85%);
+
+}
+.media_links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.call-anim{
+  animation: myAnim 2s ease 0s infinite normal forwards;
+
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width:755px){
+  .carousel-indicators{
+    display: none;
+  }
+}
+
